@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\bear.png" />
+    <None Remove="Assets\bear_king.png" />
+    <None Remove="Assets\pig.png" />
+    <None Remove="Assets\pig_king.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\bear.png" />
+    <Resource Include="Assets\bear_king.png" />
+    <Resource Include="Assets\pig.png" />
+    <Resource Include="Assets\pig_king.png" />
+  </ItemGroup>
+
+</Project>
